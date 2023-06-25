@@ -62,6 +62,9 @@ dependencies:
   '@radix-ui/react-toast':
     specifier: ^1.1.4
     version: 1.1.4(@types/react-dom@18.2.4)(@types/react@18.2.7)(react-dom@18.2.0)(react@18.2.0)
+  '@t3-oss/env-nextjs':
+    specifier: ^0.4.1
+    version: 0.4.1(typescript@5.0.4)(zod@3.21.4)
   '@tailwindcss/forms':
     specifier: ^0.5.3
     version: 0.5.3(tailwindcss@3.3.2)
@@ -95,6 +98,9 @@ dependencies:
   class-variance-authority:
     specifier: ^0.6.0
     version: 0.6.0(typescript@5.0.4)
+  clsx:
+    specifier: ^1.2.1
+    version: 1.2.1
   cmdk:
     specifier: ^0.2.0
     version: 0.2.0(@types/react@18.2.7)(react-dom@18.2.0)(react@18.2.0)
@@ -1309,6 +1315,27 @@ packages:
     resolution: {integrity: sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==}
     dependencies:
       tslib: 2.5.3
+    dev: false
+
+  /@t3-oss/env-core@0.4.1(typescript@5.0.4)(zod@3.21.4):
+    resolution: {integrity: sha512-JZI8vxlHwtiZO7OYS3qSX9Ngt7UcdqsugLwhBwx7UVi5wp1PtRo2tzMyNoBEGbfHdmkd2QU9IbvYjqtaLUA7TQ==}
+    peerDependencies:
+      typescript: '>=4.7.2'
+      zod: ^3.0.0
+    dependencies:
+      typescript: 5.0.4
+      zod: 3.21.4
+    dev: false
+
+  /@t3-oss/env-nextjs@0.4.1(typescript@5.0.4)(zod@3.21.4):
+    resolution: {integrity: sha512-lDbewJvZwOW7bFwHzdKtAH4+YcVTvGU7UEJfHwlb1RqVe9ejPrKn6ax2OGv/nFji1JXGKecKYHz3Xkpru6TFbw==}
+    peerDependencies:
+      typescript: '>=4.7.2'
+      zod: ^3.0.0
+    dependencies:
+      '@t3-oss/env-core': 0.4.1(typescript@5.0.4)(zod@3.21.4)
+      typescript: 5.0.4
+      zod: 3.21.4
     dev: false
 
   /@tailwindcss/forms@0.5.3(tailwindcss@3.3.2):
